@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Helpjuice Search
+# Search Project
 
 > The project is a realtime search box, where users search articles, and then to have analytics that display what users were searching for.
 
@@ -18,7 +18,6 @@ To get a local copy up and running follow these simple example steps.
 - write `git clone https://github.com/StevenWafeek/search_project.git`.
 - go to the repository folder in your command prompt.
 - run `bundle install`.
-- run `npm install`
 - To create database run `rails db:create`
 - run `rails db:migrate`
 
