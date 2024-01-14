@@ -1,0 +1,16 @@
+<h1>Search Results</h1>
+
+<%= form_tag(search_path, method: :post) do %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag('Search') %>
+<% end %>
+
+<% if @searches.any? %>
+  <h2>Search History</h2>
+  <ul>
+    <% @searches.each do |search| %>
+      <li><%= search.query %></li>
+    <% end %>
+  </ul>
+<% end %>
+
