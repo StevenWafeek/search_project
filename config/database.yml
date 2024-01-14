@@ -10,14 +10,10 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: test3
-  password: test3
 
 development:
   <<: *default
   database: search_project_development
-  username: test3
-  password: test3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -25,11 +21,7 @@ development:
 test:
   <<: *default
   database: search_project_test
-  username: test3
-  password: test3
 
 production:
   <<: *default
   database: search_project_test_production
-  username: test3
-  password: test3
